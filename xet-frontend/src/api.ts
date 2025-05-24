@@ -3,7 +3,7 @@ import type { AxiosRequestConfig, AxiosResponse } from 'axios'
 
 // 配置 axios 默认设置
 const apiClient = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000', // 从环境变量获取基础URL
+    baseURL: import.meta.env.VITE_API_BASE_URL || 'http://lcmonitor.dynv6.net:8001', // 从环境变量获取基础URL
     timeout: 10000, // 请求超时时间
     headers: {
         'Content-Type': 'application/json'

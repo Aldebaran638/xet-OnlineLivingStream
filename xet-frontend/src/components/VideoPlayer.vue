@@ -156,12 +156,12 @@ const minLoadingTime = ref(true);
 
 // 创建计算属性，优先使用 store 中的 URL
 const videoSrc = computed(() => {
-  return liveStore.playback_url || './video/1.mp4'
+  return liveStore.playback_url || './video/not_exist'
 })
 
 const lines = ref([
-  { name: '线路1', url: './video/1.mp4' },
-  { name: '线路2', url: './video/1.mp4' },
+  { name: '线路1', url: './video/not_exist' },
+  { name: '线路2', url: './video/not_exist' },
 ])
 const currentLine = ref(lines.value[0])
 
